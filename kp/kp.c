@@ -34,10 +34,7 @@ int main()
     setlocale(LC_ALL, "Russian");
 
     printf("Введите от 1 до 8 бар \n");
-    if (scanf("%lf", &x) != 1) {
-        printf("Ошибка: нужно ввести число.\n");
-        return 1;
-    }
+
     
     if (x < 1.0 || x > 8.0) {
         printf("Ошибка: значение x должно быть в диапазоне от 1 до 8 бар.\n");
