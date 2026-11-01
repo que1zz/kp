@@ -18,7 +18,7 @@ double calc_q(double x)
 }
 
 
-int c_check(double q, double q0, double delt_q)
+int check(double q, double q0, double delt_q)
 {
     if (fabs(q - q0) > delt_q) {
         return 1;
@@ -44,7 +44,7 @@ int main()
     q = calc_q(x);
     printf("q = %.2f\n", q);
 
-    if (c_check(q, q0, delt_q) == 1) {
+    if (check(q, q0, delt_q) == 1) {
         printf("Состояние: ПРЕДУПРЕЖДЕНИЕ\n");
     }
     else {
